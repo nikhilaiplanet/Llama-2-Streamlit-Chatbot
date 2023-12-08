@@ -93,7 +93,7 @@ if uploaded_file:
 
     # Start message, in context of no question having being not asked yet
     if 'generated' not in st.session_state:
-        st.session_state['generated'] = ["Hello ! Ask me(LLAMA2) about " + uploaded_file.name + " 🤗"]
+        st.session_state['generated'] = ["Hello! Ask me about " + uploaded_file.name + " 🤗"]
 
 
     if "past" not in st.session_state:
