@@ -28,7 +28,7 @@ def load_llm():
 
     llm = HuggingFaceHub(
         repo_id="HuggingFaceH4/zephyr-7b-beta",
-        model_kwargs={"temperature": 0.5, "max_length": 64, "max_new_tokens": 512},
+        model_kwargs={"temperature": 0.7, "max_length": 400, "max_new_tokens": 800},
         huggingfacehub_api_token=huggingface_key,
     )
 
